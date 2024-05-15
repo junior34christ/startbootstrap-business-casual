@@ -8,3 +8,17 @@ window.addEventListener('DOMContentLoaded', event => {
     const listHoursArray = document.body.querySelectorAll('.list-hours li');
     listHoursArray[new Date().getDay()].classList.add(('today'));
 })
+
+// script du fichier login
+const carrier = document.getElementById('carrier');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () =>{
+    carrier.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () =>
+    {
+        carrier.classList.remove("active");
+});
